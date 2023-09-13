@@ -3,7 +3,7 @@ import { useTypewriter,Cursor } from 'react-simple-typewriter';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 
-const Header = () => {
+const LeftHeader = () => {
   const [text] = useTypewriter({
     words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
     loop: true,
@@ -54,4 +54,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default LeftHeader
