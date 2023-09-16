@@ -1,10 +1,11 @@
 import React from 'react';
 import navLinksdata from '../../constants';
 import { Link } from 'react-scroll';
+import '../../index.css';
 
 const Navbar = () => {
   return (
-    <><div className='w-full h-24 mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600'>
+    <><div className='w-full h-24  sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600'>
       <h1>Port<span>Folio</span></h1>
     
     <div>

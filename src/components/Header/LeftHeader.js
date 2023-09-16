@@ -12,7 +12,7 @@ const LeftHeader = () => {
     delaySpeed: 2000,
   });
   return (
-<section id='home' className='w-full  py-20 pb-20 flex items-center border-b-[1px] font-titleFont border-b-black'>
+
 <div className='w-1/2 flex flex-col gap-20'>
   <div className='flex flex-col gap-5'>
     <h4 className='text-lg font-normal'>Welcome to my World</h4>
@@ -50,7 +50,7 @@ const LeftHeader = () => {
 </div>
 </div>
 </div>
-</section>
+
   )
 }
 
