@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import Header from "./components/Header/Header";
 import Features from "./components/features/Features";
+import Projects from "./components/projects/Projects";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar/>
       <Header/>
       <Features/>
+      <Projects/>
     </div>
   </div>
   );
