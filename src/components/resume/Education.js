@@ -1,8 +1,12 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import ResumeCard from './ResumeCard'
 const Education = () => {
   return (
-<div className='w-full flex gap-20'> 
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1, transition: { duration: 0.5 } }}
+className='w-full flex gap-20'> 
 <div >
 <div className='py-12 font-titleFont' >
   <p className='text-sm text-designColor tracking-[4px]'>2017-2019</p>
@@ -58,7 +62,7 @@ des="Html,css"
 
 </div>
 </div>
-</div>
+</motion.div>
   )
 }
 
