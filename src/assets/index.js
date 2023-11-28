@@ -1,5 +1,5 @@
 import project1 from "./images/project1.jpg";
-import project2 from "./images/logo.jpg";
+import project2 from "./images/freshfit.png";
 import project3 from "./images/CRM.jpg";
 import project4 from "./images/tech-blog.jpg";
 import project5 from "./images/text-editor.jpg";
