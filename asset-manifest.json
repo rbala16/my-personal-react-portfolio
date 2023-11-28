@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/my-personal-react-portfolio/static/css/main.dea53a44.css",
-    "main.js": "/my-personal-react-portfolio/static/js/main.ecb45121.js",
+    "main.js": "/my-personal-react-portfolio/static/js/main.9ee10fc9.js",
     "static/media/my-portfolio-photo.png": "/my-personal-react-portfolio/static/media/my-portfolio-photo.9cb65034e9114ae5cf9e.png",
+    "static/media/freshfit.png": "/my-personal-react-portfolio/static/media/freshfit.e8c58a91147a0b9fc282.png",
     "static/media/contact-pic.jpeg": "/my-personal-react-portfolio/static/media/contact-pic.5e142cb66fe89cd89474.jpeg",
     "static/media/CRM.jpg": "/my-personal-react-portfolio/static/media/CRM.d230653b0d539ce8d054.jpg",
     "static/media/tech-blog.jpg": "/my-personal-react-portfolio/static/media/tech-blog.ba5205a584bd6314ae69.jpg",
     "static/media/weather-forecast.jpg": "/my-personal-react-portfolio/static/media/weather-forecast.fed4b9d98aa5bd6196db.jpg",
     "static/media/project1.jpg": "/my-personal-react-portfolio/static/media/project1.61f02d5f148f708dbcf4.jpg",
     "static/media/text-editor.jpg": "/my-personal-react-portfolio/static/media/text-editor.e9fe08fd1033183fa724.jpg",
-    "static/media/logo.jpg": "/my-personal-react-portfolio/static/media/logo.12827b741015e2194e31.jpg",
     "index.html": "/my-personal-react-portfolio/index.html",
     "main.dea53a44.css.map": "/my-personal-react-portfolio/static/css/main.dea53a44.css.map",
-    "main.ecb45121.js.map": "/my-personal-react-portfolio/static/js/main.ecb45121.js.map"
+    "main.9ee10fc9.js.map": "/my-personal-react-portfolio/static/js/main.9ee10fc9.js.map"
   },
   "entrypoints": [
     "static/css/main.dea53a44.css",
-    "static/js/main.ecb45121.js"
+    "static/js/main.9ee10fc9.js"
   ]
 }
