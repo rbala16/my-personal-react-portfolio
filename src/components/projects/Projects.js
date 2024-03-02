@@ -35,11 +35,11 @@ view='https://text-editor-rb-86dc49448406.herokuapp.com/'
 githubsrc='https://github.com/rbala16/text-editor_rb'
 />
 <ProjectCard
-     title= "Fresh Fit -Express"
-     des='A platform for heathy food that allows users to browse the menu, add items to a virtual shopping cart, tailor their orders to their preferences, and complete their purchases using credit or debit cards. '
+     title= "E-Commerce"
+     des='Build the back end for an e-commerce site by modifying starter code. Moreover, Configure a working Express.js API to use Sequelize to interact with a MySQL database. '
      src={project2}
-     view='https://dry-badlands-70011-5660fc692bea.herokuapp.com/'
-     githubsrc='https://github.com/sumanpreetk01/FreshFit-Express'
+     view='https://drive.google.com/file/d/1NhSf1V5wi4tG9vXRYL4bAIXRMsixZQJB/view'
+     githubsrc='https://github.com/rbala16/e-commerce-website_rb'
 />
 <ProjectCard
 title= "Weather Forecast"
