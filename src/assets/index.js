@@ -4,7 +4,7 @@ import project3 from "./images/CRM.jpg";
 import project4 from "./images/tech-blog.jpg";
 import project5 from "./images/text-editor.jpg";
 import project6 from "./images/weather-forecast.jpg";
-import myphoto from "./images/my-portfolio-photo.png";
+import myphoto from "./images/Portfolio-image.png";
 import Contactpic from "./images/contact-pic.jpeg";
 
 export{
