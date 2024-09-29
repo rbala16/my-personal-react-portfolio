@@ -12,7 +12,7 @@ const Projects = () => {
 title='VISIT MY RECENT PROJECTS'
 des='my Projects'/>
 </div>
-<div className='grid grid-cols-3 gap-14'>
+<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14'>
 <ProjectCard
 title='Note Maker'
 des='Create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.'
