@@ -14,6 +14,9 @@
 .active{
   color :white;
 }
+.scrollbar-hide::-webkit-scrollbar{
+  display: none;
+}
 .bgOpacity{
   @apply bg-black bg-opacity-40
 }
