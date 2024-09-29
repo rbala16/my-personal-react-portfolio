@@ -51,11 +51,10 @@ const Navbar = () => {
                 </h1>
                 <ul className="flex flex-col gap-4 ">
                   {navLinksdata.map((item) => (
-                    <li key={item._id}  
+                    <li key={item._id}  onClick={()=>setShowMenu(false)} 
                     className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300">
                       {item.title}
                       <Link
-                       onClick={()=>setShowMenu(false)}
                         activeClass="active"
                         to={item.link}
                         spy={true}
