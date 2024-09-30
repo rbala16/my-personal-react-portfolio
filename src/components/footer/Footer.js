@@ -7,15 +7,33 @@ const Footer = () => {
     <div className="w-full py-20 h-auto border-b-[1px] border-b-black  grid grid-cols-1 md:grid-cols-3 lgl:grid-cols-4 gap-8">
       <div className="w-full h-full flex flex-col gap-8">
         <div className="flex gap-4">
-          <span className="bannerIcon">
-            <FaFacebookF />
-          </span>
-          <span className="bannerIcon">
-            <FaTwitter />
-          </span>
-          <span className="bannerIcon">
-            <FaLinkedinIn />
-          </span>
+        <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="bannerIcon">
+                <FaFacebookF />
+              </span>
+            </a>
+            <a
+              href="https://x.com/i/flow/login"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="bannerIcon">
+                <FaTwitter />
+              </span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rajni-bala-4ba53716b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="bannerIcon">
+                <FaLinkedinIn />
+              </span>
+            </a>
         </div>
       </div>
       <div className="w-full h-full">

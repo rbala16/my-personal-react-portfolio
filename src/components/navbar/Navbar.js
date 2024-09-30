@@ -44,15 +44,15 @@ const Navbar = () => {
             <FiMenu />
           </span>
           {showMenu && (
-            <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
+            <div className="w-[100%] h-screen overflow-scroll fixed top-0 left-0 bg-gray-900 text-center p-4 scrollbar-hide ">
               <div className="flex flex-col gap-8 py-2 relative">
                 <h1 className="p-6 text-center text-designColor">
                   Port<span>Folio</span>
                 </h1>
-                <ul className="flex flex-col gap-4 ">
+                <ul className="flex flex-col gap-6 ">
                   {navLinksdata.map((item) => (
                     <li key={item._id}  onClick={()=>setShowMenu(false)} 
-                    className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300">
+                    className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300 ">
                       {item.title}
                       <Link
                         activeClass="active"
@@ -66,20 +66,38 @@ const Navbar = () => {
                   ))}
                 </ul>
               </div>
-              <div className="flex flex-col gap-4">
-                <h2 className="text-base uppercase font-titleFont mb-4">
-                  Find me in
+              <div className="flex flex-col gap-4 items-center">
+                <h2 className="text-base uppercase text-gray-400  mb-4 py-4">
+                  Find me in:
                 </h2>
-                <div className="flex gap-4">
-                  <span className="bannerIcon">
-                    <FaFacebookF />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaTwitter />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaLinkedinIn />
-                  </span>
+                <div className="flex gap-6">
+                <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="bannerIcon">
+                <FaFacebookF />
+              </span>
+            </a>
+            <a
+              href="https://x.com/i/flow/login"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="bannerIcon">
+                <FaTwitter />
+              </span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rajni-bala-4ba53716b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="bannerIcon">
+                <FaLinkedinIn />
+              </span>
+            </a>
                 </div>
               </div>
               <span

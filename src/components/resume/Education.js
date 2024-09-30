@@ -25,7 +25,7 @@ border-opacity-30 flex flex-col gap-10"
 Proficient in HTML, CSS, and JavaScript, with expertise in React.js for building dynamic user interfaces.
 Developed server-side scripting skills using Node.js and Express for building robust and scalable back-end systems.
 Applied database management principles with MongoDB and MySQL.
-Deployed web applications in cloud environments such as AWS, github or Heroku.
+Deployed web applications in cloud environments such as github ,googleCloud,Heroku.
 Enhanced problem-solving skills and attention to detail through rigorous testing practices, including unit testing and end-to-end testing."
           />
           <ResumeCard
