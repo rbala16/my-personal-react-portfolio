@@ -1,11 +1,10 @@
-import React from "react";
-import navLinksdata from "../../constants";
+import React, { useState } from "react";
+import { navLinksdata } from "../../constants";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import "../../index.css";
-import { useState } from "react";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -18,7 +17,7 @@ const Navbar = () => {
         </h1>
 
         <div>
-          <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
+          <ul className="hidden md:inline-flex items-center gap-6 lg:gap-10">
             {navLinksdata.map(({ _id, title, link }) => (
               <li
                 className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
@@ -39,7 +38,7 @@ const Navbar = () => {
           </ul>
           <span
             onClick={() => setShowMenu(!showMenu)}
-            className="text-xl mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
+            className="text-xl md:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
           >
             <FiMenu />
           </span>
@@ -51,17 +50,21 @@ const Navbar = () => {
                 </h1>
                 <ul className="flex flex-col gap-6 ">
                   {navLinksdata.map((item) => (
-                    <li key={item._id}  onClick={()=>setShowMenu(false)} 
-                    className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300 ">
-                      {item.title}
+                    <li
+                      key={item._id}
+                      className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300 "
+                    >
                       <Link
+                        onClick={() => setShowMenu(false)}
                         activeClass="active"
                         to={item.link}
                         spy={true}
                         smooth={true}
                         offset={-70}
                         duration={500}
-                      ></Link>
+                      >
+                        {item.title}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -71,33 +74,33 @@ const Navbar = () => {
                   Find me in:
                 </h2>
                 <div className="flex gap-6">
-                <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="bannerIcon">
-                <FaFacebookF />
-              </span>
-            </a>
-            <a
-              href="https://x.com/i/flow/login"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="bannerIcon">
-                <FaTwitter />
-              </span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/rajni-bala-4ba53716b/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="bannerIcon">
-                <FaLinkedinIn />
-              </span>
-            </a>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="bannerIcon">
+                      <FaFacebookF />
+                    </span>
+                  </a>
+                  <a
+                    href="https://x.com/i/flow/login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="bannerIcon">
+                      <FaTwitter />
+                    </span>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/rajni-bala-4ba53716b/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="bannerIcon">
+                      <FaLinkedinIn />
+                    </span>
+                  </a>
                 </div>
               </div>
               <span
