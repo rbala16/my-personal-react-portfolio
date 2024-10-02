@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { navLinksdata } from "../../constants";
+import { navLinksdata } from "../../constants/navLinkData";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
