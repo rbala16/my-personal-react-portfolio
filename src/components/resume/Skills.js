@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { skillBarData } from "../../constants/SkillBarData";
 
-const Skills = () => {
+const Skills = (name,percentage) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
