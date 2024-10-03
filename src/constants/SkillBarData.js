@@ -1,47 +1,50 @@
-export const skillBarData = [
+export const skillsLeftColumn = [
   {
-    name: "HTML",
+    skill: "HTML",
     percentage: 90,
   },
   {
-    name: "CSS",
+    skill: "CSS",
     percentage: 90,
   },
-  { name: "JavaScript", percentage: 80 },
+  { skill: "JavaScript", percentage: 80 },
   {
-    name: "React",
+    skill: "React",
     percentage: 85,
   },
   {
-    name: "Node JS",
-    percentage: 80,
-  },
-  {
-    name: "Express",
+    skill: "Bootstrap",
     percentage: 85,
   },
   {
-    name: "MySQL",
+    skill: " Tailwind",
+    percentage: 80,
+  },
+];
+
+export const skillsRightColumn = [
+  {
+    skill: "Node JS",
     percentage: 80,
   },
   {
-    name: "Heroku",
-    percentage: 90,
-  },
-  {
-    name: "MongoDB",
-    percentage: 90,
-  },
-  {
-    name: "No Sql",
-    percentage: 80,
-  },
-  {
-    name: "Bootstrap",
+    skill: "Express",
     percentage: 85,
   },
   {
-    name: " Tailwind",
+    skill: "MySQL",
+    percentage: 80,
+  },
+  {
+    skill: "Heroku",
+    percentage: 90,
+  },
+  {
+    skill: "MongoDB",
+    percentage: 90,
+  },
+  {
+    skill: "No Sql",
     percentage: 80,
   },
 ];
