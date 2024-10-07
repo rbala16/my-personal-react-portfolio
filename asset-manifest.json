@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-personal-react-portfolio/static/css/main.77e05d9a.css",
-    "main.js": "/my-personal-react-portfolio/static/js/main.bf4ccad7.js",
+    "main.css": "/my-personal-react-portfolio/static/css/main.c8a90f39.css",
+    "main.js": "/my-personal-react-portfolio/static/js/main.48711058.js",
     "static/media/contact-pic.jpeg": "/my-personal-react-portfolio/static/media/contact-pic.5e142cb66fe89cd89474.jpeg",
     "static/media/e-commerce.png": "/my-personal-react-portfolio/static/media/e-commerce.c5cddae532786ff5b112.png",
     "static/media/CRM.jpg": "/my-personal-react-portfolio/static/media/CRM.d230653b0d539ce8d054.jpg",
@@ -10,12 +10,16 @@
     "static/media/weather-forecast.jpg": "/my-personal-react-portfolio/static/media/weather-forecast.fed4b9d98aa5bd6196db.jpg",
     "static/media/project1.jpg": "/my-personal-react-portfolio/static/media/project1.61f02d5f148f708dbcf4.jpg",
     "static/media/text-editor.jpg": "/my-personal-react-portfolio/static/media/text-editor.e9fe08fd1033183fa724.jpg",
+    "static/media/slick.svg": "/my-personal-react-portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/my-personal-react-portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/my-personal-react-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/my-personal-react-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/my-personal-react-portfolio/index.html",
-    "main.77e05d9a.css.map": "/my-personal-react-portfolio/static/css/main.77e05d9a.css.map",
-    "main.bf4ccad7.js.map": "/my-personal-react-portfolio/static/js/main.bf4ccad7.js.map"
+    "main.c8a90f39.css.map": "/my-personal-react-portfolio/static/css/main.c8a90f39.css.map",
+    "main.48711058.js.map": "/my-personal-react-portfolio/static/js/main.48711058.js.map"
   },
   "entrypoints": [
-    "static/css/main.77e05d9a.css",
-    "static/js/main.bf4ccad7.js"
+    "static/css/main.c8a90f39.css",
+    "static/js/main.48711058.js"
   ]
 }
