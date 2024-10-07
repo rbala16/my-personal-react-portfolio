@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-personal-react-portfolio/static/css/main.c8a90f39.css",
-    "main.js": "/my-personal-react-portfolio/static/js/main.48711058.js",
+    "main.css": "/my-personal-react-portfolio/static/css/main.9d6b124a.css",
+    "main.js": "/my-personal-react-portfolio/static/js/main.3833f1a2.js",
     "static/media/contact-pic.jpeg": "/my-personal-react-portfolio/static/media/contact-pic.5e142cb66fe89cd89474.jpeg",
     "static/media/e-commerce.png": "/my-personal-react-portfolio/static/media/e-commerce.c5cddae532786ff5b112.png",
     "static/media/CRM.jpg": "/my-personal-react-portfolio/static/media/CRM.d230653b0d539ce8d054.jpg",
@@ -15,11 +15,11 @@
     "static/media/slick.ttf": "/my-personal-react-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/my-personal-react-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/my-personal-react-portfolio/index.html",
-    "main.c8a90f39.css.map": "/my-personal-react-portfolio/static/css/main.c8a90f39.css.map",
-    "main.48711058.js.map": "/my-personal-react-portfolio/static/js/main.48711058.js.map"
+    "main.9d6b124a.css.map": "/my-personal-react-portfolio/static/css/main.9d6b124a.css.map",
+    "main.3833f1a2.js.map": "/my-personal-react-portfolio/static/js/main.3833f1a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8a90f39.css",
-    "static/js/main.48711058.js"
+    "static/css/main.9d6b124a.css",
+    "static/js/main.3833f1a2.js"
   ]
 }
