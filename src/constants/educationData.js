@@ -23,19 +23,19 @@ export const rightCertificates = [
     {
       title:"Build Responsive Real-World Websites with HTML and CSS",
       subTitle:"Udemy",
-      Length:"37.5",
+      result:"37.5",
       des:"Gained expertise in HTML5 and modern CSS, including Flexbox, Grid, and key concepts like the box model, positioning, and inheritance. Designed and built professional, responsive websites from scratch, following web design frameworks for accessibility and visual appeal. Developed skills in planning, sketching, coding, testing, and optimizing real-world projects, while mastering developer tools, debugging, and utilizing free design assets like images, fonts, and icons. Completed over 10 hands-on challenges to enhance and apply knowledge.",
     },
     {
         title:"Web Development Fundamentals",
         subTitle:"IBM SkillsBuild",
-        Length:"12 hours",
+        result:"12 hours",
         des:"Demonstrates strong knowledge of web development processes, including website development, deployment, and testing, with experience using HTML, CSS, and JavaScript in an integrated development environment (IDE). Has a conceptual understanding of building interactive websites and is familiar with the skills needed for success in various web development roles, as well as the job outlook in the field.",
     },
     {
         title:"The Complete Javascript Course 2024: From Zero to Expert!",
         subTitle:"Udemy",
-        Length:"68.5 hours",
+        result:"68.5 hours",
         des:"Acquired advanced JavaScript development skills, building 6 real-world projects and mastering core concepts like variables, functions, arrays, objects, and modern ES6+ features (arrow functions, destructuring, etc.). Gained deep understanding of object-oriented programming (OOP), complex topics like closures and higher-order functions, and asynchronous JavaScript with Promises and async/await. Experienced with modern tools like NPM, Parcel, Babel, and ES6 modules, along with hands-on practice through 50+ challenges and assignments. Confident in problem-solving, code architecture, and workflow optimization.",
     }
 ];
