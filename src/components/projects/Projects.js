@@ -1,64 +1,103 @@
-import React from 'react'
-import Title from '../layouts/Title'
-import ProjectCard from './ProjectCard';
-import {project1,project2,project3,project4,project5,project6} from '../../assets/index';
+import React, { useState } from "react";
+import Title from "../layouts/Title";
+import ProjectCard from "./ProjectCard";
+import Slider from "react-slick";
+import { projectsData } from "../../constants/projectData";
 
 const Projects = () => {
+  const [viewMore, setViewMore] = useState(false);
+
+  // const visibleProjects = viewMore ? projectsData : projectsData.slice(0, 3);
+
+  const handleViewMore = () => {
+    setViewMore(!viewMore);
+  };
+
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 800,
+    autoplay: true, // Automatically slide to next project
+    autoplaySpeed: 3000, // 3 seconds per slide
+    slidesToShow: 3, // Show 3 slides at a time by default
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2, // Show 2 slides at a time on medium screens
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1, // Show 1 slide at a time on small screens
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1, // Show 1 slide at a time on extra small screens
+        },
+      },
+    ],
+  };
+
   return (
-    <section id='projects'
-    className='w-full py-20 border-b-[1px] border-b-black'>
-      <div className='flex justify-center items-center text-center'>
-<Title 
-title='VISIT MY RECENT PROJECTS'
-des='my Projects'/>
-</div>
-<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14'>
-<ProjectCard
-title='Note Maker'
-des='Create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.'
-src={project1}
-view='https://deploying-note-maker-3b48ad0df49a.herokuapp.com/'
-githubsrc='https://github.com/rbala16/note-maker_rb'
-/>
-<ProjectCard
- title= "The Tech Blog"
- des='Build a CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts as well. I can publish articles, blog posts, and my thoughts and opinions'
-src={project4}
-view='https://tech-blog-rb-776385415434.herokuapp.com/'
-githubsrc='https://github.com/rbala16/The-Tech-blog_rb'
-/>
-<ProjectCard
- title= "Text-Editor"
- des='Build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser.'
-src={project5}
-view='https://text-editor-rb-86dc49448406.herokuapp.com/'
-githubsrc='https://github.com/rbala16/text-editor_rb'
-/>
-<ProjectCard
-     title= "E-Commerce"
-     des='Build the back end for an e-commerce site by modifying starter code. Moreover, Configure a working Express.js API to use Sequelize to interact with a MySQL database. '
-     src={project2}
-     view='https://drive.google.com/file/d/1NhSf1V5wi4tG9vXRYL4bAIXRMsixZQJB/view'
-     githubsrc='https://github.com/rbala16/e-commerce-website_rb'
-/>
-<ProjectCard
-title= "Weather Forecast"
-des='Third-party API,used to check the five days weather of any city ,its will also display current weather too with icons.I had great experience working on this project'
-src={project6}
-view='https://rbala16.github.io/five-days-weather-forecast/'
-githubsrc='https://github.com/rbala16/five-days-weather-forecast'
-/>
-<ProjectCard
-  title= "CRM-lite"
-  des='A CRM-lite is a Green Grass Lawn Care Services for employees to book appointment in order to have fastest lawn services and provide excellent customer lawn care services experience. This app uses 3rd party API s such Weather API and Canadian holiday api.'
-src={project3}
-view='https://dinozio-design.github.io/CRM-lite/'
-githubsrc='https://github.com/dinozio-design/CRM-lite'
-/>
+    <section
+      id="projects"
+      className="w-full py-20 border-b-[1px] border-b-black"
+    >
+      <div className="flex justify-center items-center text-center">
+        <Title title="VISIT MY RECENT PROJECTS" des="my Projects" />
+      </div>
 
-</div>
+      <div className="w-full">
+        {/* If viewMore is true, show all projects in grid layout */}
+        {!viewMore ? (
+          <Slider {...settings}>
+            {projectsData.map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                des={project.des}
+                src={project.src}
+                view={project.view}
+                githubsrc={project.githubsrc}
+              />
+            ))}
+          </Slider>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+            {projectsData.map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                des={project.des}
+                src={project.src}
+                view={project.view}
+                githubsrc={project.githubsrc}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* Show View More button only if viewMore is false otherwise viewless */}
+      
+        <div className="flex justify-center items-center mt-8">
+          <button
+            onClick={handleViewMore}
+            className="w-full h-12 bg-[#141518] rounded-lg text-base
+           text-gray-400 tracking-wider uppercase hover:text-white duration-300
+           hover:border-[1px] hover:border-designColor border-transparent"
+          >
+            {viewMore ? "View Less Projects" : "View More Projects"}
+          </button>
+        </div>
+      
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

@@ -35,3 +35,7 @@ focus-visible:border-b-transparent duration-300;
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+.slick-slide {
+  transition: all 0.5s ease-in-out; 
+}
